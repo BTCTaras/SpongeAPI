@@ -44,7 +44,7 @@ import java.util.List;
 public interface StatusResponse {
 
     /**
-     * Gets the description (MotD) of the status response.
+     * Gets the description (MOTD) of the status response.
      *
      * @return The description to display
      */

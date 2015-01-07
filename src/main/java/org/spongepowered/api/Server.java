@@ -206,7 +206,7 @@ public interface Server {
      * Gets the default message that is displayed in the server list of the
      * client.
      * 
-     * @return The servers default MotD
+     * @return The server's default description (MOTD)
      */
     Message getMotd();
 

@@ -50,7 +50,7 @@ public interface StatusPingEvent extends GameEvent, Cancellable, StatusResponse 
     StatusClient getClient();
 
     /**
-     * Sets the description (MotD) of the status response.
+     * Sets the description (MOTD) of the status response.
      *
      * @param description The description to display
      */
