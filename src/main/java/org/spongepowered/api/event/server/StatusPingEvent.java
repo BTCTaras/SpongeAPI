@@ -39,6 +39,10 @@ import javax.annotation.Nullable;
 
 /**
  * Called when a client pings the server from the server list.
+ * <p>
+ * If this event gets cancelled, it will close the client connection without
+ * sending any response.
+ * </p>
  */
 public interface StatusPingEvent extends GameEvent, Cancellable, StatusResponse {
 
