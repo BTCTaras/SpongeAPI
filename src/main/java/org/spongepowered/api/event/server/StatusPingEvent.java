@@ -64,12 +64,16 @@ public interface StatusPingEvent extends GameEvent, Cancellable, StatusResponse 
     Optional<Players> getPlayers();
 
     /**
-     * Sets whether information about the players on this server is hidden and
-     * doesn't get sent to the client. This will restore the
+     * Sets whether the player count and the list of players on this server is
+     * hidden and doesn't get sent to the client. This will restore
      * {@link #getPlayers()} if the players were previously hidden.
      * <p>
      * Use {@link #getPlayers()}.{@link Optional#isPresent() isPresent()} to
      * check if the players are already hidden.
+     * </p>
+     * <p>
+     * In Vanilla, this will display {@code ???} instead of the player count in
+     * the server list.
      * </p>
      *
      * @param hide {@code True} if the players should be hidden

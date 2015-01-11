@@ -51,7 +51,8 @@ public interface StatusResponse {
     Message getDescription();
 
     /**
-     * Gets information about players currently playing on the server.
+     * Gets player count and the list of players currently playing on the
+     * server.
      *
      * @return The player information, or {@link Optional#absent()} if not
      *         available
@@ -67,7 +68,8 @@ public interface StatusResponse {
     GameVersion getVersion();
 
     /**
-     * Represents the information about the players on the server.
+     * Represents the player count, slots and a list of players current playing
+     * on a server.
      */
     interface Players {
 
