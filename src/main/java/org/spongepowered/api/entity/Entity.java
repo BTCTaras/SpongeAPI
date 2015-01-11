@@ -26,11 +26,15 @@
 package org.spongepowered.api.entity;
 
 import com.flowpowered.math.vector.Vector2f;
+import com.flowpowered.math.vector.Vector3d;
 import com.google.common.base.Optional;
 import org.spongepowered.api.util.DataHolder;
 import org.spongepowered.api.util.Identifiable;
+import org.spongepowered.api.util.PositionTypes;
 import org.spongepowered.api.world.Location;
 import org.spongepowered.api.world.World;
+
+import java.util.EnumSet;
 
 import javax.annotation.Nullable;
 
@@ -74,6 +78,16 @@ public interface Entity extends Identifiable, EntityState, DataHolder {
      * @return True if the teleport was successful
      */
     boolean setLocation(Location location);
+
+    /**
+     * Moves the entity by the specified
+     *
+     * @param location The location to set
+     * @param rotation The rotation to set
+     * @param positionTypes The type of position change of each coordinate.
+     * @return True if the teleport was successful
+     */
+    boolean setLocationAndRotation(Location location, Vector2f rotation, EnumSet<PositionTypes> positionTypes);
 
     /**
      * Gets the rotation as a Vector2f.
