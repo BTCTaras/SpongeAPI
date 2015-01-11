@@ -28,18 +28,12 @@ package org.spongepowered.api.util;
 /**
  * Represents the possible ways entity positions can be modified.
  */
-public enum PositionTypes {
+public enum RelativePositions {
 
-    X_ABSOLUTE,
-    Y_ABSOLUTE,
-    Z_ABSOLUTE,
-    PITCH_ABSOLUTE,
-    YAW_ABSOLUTE,
-
-    X_RELATIVE,
-    Y_RELATIVE,
-    Z_RELATIVE,
-    PITCH_RELATIVE,
-    YAW_RELATIVE
+    X,
+    Y,
+    Z,
+    PITCH,
+    YAW
 
 }

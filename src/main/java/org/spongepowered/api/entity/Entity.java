@@ -26,11 +26,10 @@
 package org.spongepowered.api.entity;
 
 import com.flowpowered.math.vector.Vector2f;
-import com.flowpowered.math.vector.Vector3d;
 import com.google.common.base.Optional;
 import org.spongepowered.api.util.DataHolder;
 import org.spongepowered.api.util.Identifiable;
-import org.spongepowered.api.util.PositionTypes;
+import org.spongepowered.api.util.RelativePositions;
 import org.spongepowered.api.world.Location;
 import org.spongepowered.api.world.World;
 
@@ -84,10 +83,10 @@ public interface Entity extends Identifiable, EntityState, DataHolder {
      *
      * @param location The location to set
      * @param rotation The rotation to set
-     * @param positionTypes The type of position change of each coordinate.
+     * @param relativePositionses The coordinates to set relatively.
      * @return True if the teleport was successful
      */
-    boolean setLocationAndRotation(Location location, Vector2f rotation, EnumSet<PositionTypes> positionTypes);
+    boolean setLocationAndRotation(Location location, Vector2f rotation, EnumSet<RelativePositions> relativePositionses);
 
     /**
      * Gets the rotation as a Vector2f.
