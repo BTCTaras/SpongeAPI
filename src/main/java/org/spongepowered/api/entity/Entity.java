@@ -83,10 +83,10 @@ public interface Entity extends Identifiable, EntityState, DataHolder {
      *
      * @param location The location to set
      * @param rotation The rotation to set
-     * @param relativePositionses The coordinates to set relatively.
+     * @param relativePositions The coordinates to set relatively
      * @return True if the teleport was successful
      */
-    boolean setLocationAndRotation(Location location, Vector2f rotation, EnumSet<RelativePositions> relativePositionses);
+    boolean setLocationAndRotation(Location location, Vector2f rotation, EnumSet<RelativePositions> relativePositions);
 
     /**
      * Gets the rotation as a Vector2f.
